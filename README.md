@@ -1,4 +1,4 @@
 # Rails-Form
 
-Building  bare forms with rails
+Building  bare forms with rails helpers
 
