@@ -12,6 +12,7 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
+  IgnoredPatterns: ['(\A|\s)#']
 Metrics/MethodLength:
   Include:
     - "app/controllers/*"
@@ -42,7 +43,7 @@ Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
 Layout/HashAlignment:
-  EnforcedColonStyle: never
+  EnforcedColonStyle: key
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
