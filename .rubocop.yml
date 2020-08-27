@@ -42,11 +42,11 @@ Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
 Layout/HashAlignment:
-  EnforcedColonStyle: key
+  EnforcedColonStyle: never
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
-  Enabled: false
+  Enabled: true
   EnforcedStyle: indented
 Lint/RaiseException:
   Enabled: false
