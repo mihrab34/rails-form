@@ -1,0 +1,35 @@
+<%# rails helper form_for %>
+<%= render 'form' %>
+
+<%# rails helper form_tag %>
+<%
+=begin %>
+<%= form_tag(users_path, method: "post") do %>
+  <%= label_tag(:username, "Username") %>
+  <%= text_field_tag(:username, nil) %>
+
+  <%= label_tag(:email, "Email") %>
+  <%= email_field_tag(:email, nil) %>
+
+  <%= label_tag(:password, "Password") %>
+  <%= password_field_tag(:password, nil) %>
+
+  <%= submit_tag("Submit") %>
+<% end %>
+<% 
+=end %>
+
+<%# Html form %>
+<%# <form action="/users" accept-charset="UTF-8" method="post"> %>
+    <%# <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+    <%# <label for="username">User name</label><br>
+    <input id="username" name="user[username]" type="text"><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" type="email" name="user[email]"><br>
+
+    <label for="password">Password</label><br>
+    <input id="password" type="password" name="user[password]"><br>
+    
+      <input type="submit" value="Submit">
+</form> %>
